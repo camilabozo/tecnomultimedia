@@ -3,7 +3,8 @@ Hansel & Gretel
 Pantalla 1:
           Descripción: Imagen de presentación de la historia
           Historia: Bienvenidx a la aventura gráfica de los hermanos Hansel & Gretel 
-          Acción: Hacé click en el botón para comenzar. Lleva a Pantalla 2.
+	  
+       	   Acción: Hacé click en el botón para comenzar. Lleva a Pantalla 2.
 	
 Pantalla 2:
            Descripción: 4 imágenes en una misma pantalla, acomodadas estilo comic. 1ra la
@@ -24,7 +25,8 @@ Pantalla 3:
           Historia: Su padre nunca llegó.
           – Muero de hambre Hansel, ¡tenemos que encontrar comida!
           – No podemos movernos de acá, papá nos dijo que nos quedáramos aquí, que el vendría por nosotros. Si vamos a buscar comida, no nos encontrará!”
-          Acción:
+	  	
+      	    Acción:
                 No-> 	
                   Pantalla 5. 
                           Pantalla 6->
@@ -64,6 +66,7 @@ Pantalla 4:
 Pantalla 5:
           Descripción: Hansel & Gretel abrazados en el bosque.
           Historia: Hansel y Gretel mueren de frío y hambre, pues el padre nunca llegó.
+	  
           Acción: 
                 ->Pantalla 6.
                       Sí ->
@@ -74,7 +77,8 @@ Pantalla 5:
 Pantalla 6:
           Descripción: Pantalla de recurso para volver a iniciar la historia.
           Historia: ¿Volver a empezar?
-          Acción: 
+	  
+     	     Acción: 
                 ¿Volver a empezar?
                        Sí-> 
                          Pantalla 1.
@@ -85,6 +89,7 @@ Pantalla 6:
 Pantalla 7:
           Descripción: Fin.
           Historia: Llegó el fin de la historia.
+	  
           Acción:
                 ->Pantalla 1.
  
@@ -95,7 +100,8 @@ Pantalla 8:
           Con muy malos modos despertó a su hermana y le dijo que fuese a por agua para preparar algo de comer, pues su hermano debía engordar cuanto antes para poder               comérselo. La pequeña Gretel se dio cuenta entonces de que no era una vieja, sino una malvada bruja.
            Un día la bruja se cansó y decidió no esperar más.
          – ¡Gretel, prepara el horno que vas a amasar pan y llenarás la panza de tu hermano! ordenó a la niña.
-          Acción:
+	 
+       	   Acción:
               ->¿Darle de comer a Hansel hasta reventar?
                        ->Sí.
                           ->Pantalla 9.
@@ -104,12 +110,14 @@ Pantalla 8:
 Pantalla 9:
           Descripción: La bruja muy feliz.
           Historia: La bruja logró su cometido. Gretel alimentó tanto a su hermano que engordó lo suficiente para que la bruja se lo comiera. Luego de postre se la comió           a ella.
+	  
           Acción:
             ->Pantalla 6.
             
 Pantalla 10: 
           Descripción: La bruja se pone a calentar el horno.
           Historia: La bruja enojada empuja a Gretel y se pone a cocinar pegada al horno… lo cual resulta MUY tentador para Gretel, si empujara  la bruja dentro del horno por             fin se libraría de ella y de su siniestro plan.
+	  
           Acción:
             ->¿Empujar a la bruja dentro del horno?
                   Si->
@@ -120,6 +128,7 @@ Pantalla 11:
           Descripción: Gretel se encuentra en un momento crítico y no sabe qué hacer...
           Historia: Finalmente decidió empujar a la bruja dentro del horno, la bruja comenzó a gritar muy muy fuerte, tan fuerte que hizo temblar toda la casa.
           No sabe qué hacer para detenerla... ¿tal vez debería cerrar la puerta del horno?
+	  
           Acción:
             ->¿Cerrar la puerta del horno?
                   -Si->
@@ -130,6 +139,7 @@ Pantalla 11:
 Pantalla 12:
             Descripción: La bruja logra escapar del horno.
             Historia: La bruja ve su oportunidad y la toma, al ver que Gretel no cerró ni trabó la puerta del horno, aún podía escapar… y así lo hizo. Resultó bastante                       herida, pero después de mucho esfuerzo logró escapar. 
+	    
             Acción:
               ->Pantalla 9.
               
@@ -137,6 +147,7 @@ Pantalla 13:
               Descripción: Gretel se ve muy estresada...
               Historia: Finalmente la bruja dentro del horno muere, Gretel se siente muy feliz porque ya no los comerá ni a su hermano ni a ella. Los dos pequeños se                 abrazaron y lloraron de alegría al ver que habían salido vivos de aquella horrible situación y que la bruja había muerto.
                    Pero su travesía no terminaba ahí… Sabían que dentro de la casa aún ardía en llamas el cuerpo de la bruja, pero Hansel al haber estado tanto tiempo                     encerrado en el establo estaba muriendo de un frío desgarrador. Necesitaba calor pronto y algo de comida.
+		   
               Acción:
                 ->¿Volver a la casa?
                       ->Sí.
@@ -147,12 +158,14 @@ Pantalla 13:
 Pantalla 14:
             Descripción: Los niños escapan y se meten al bosque nuevamente.
             Historia: Hansel y Gretel tenían tanto miedo que no pudieron volver a la casa, ni para calentar un poco a Hansel, ni para comer algo de comida. Era tanto el miedo que tenían que se adentraron de nuevo en el oscuro bosque… y vivieron en una eterna búsqueda de comida para sobrevivir, pues jamás encontraron el camino de regreso a casa.
+	    
             Acción:
               ->Pantalla 6.
               
 Pantalla 15:
             Descripción: Los hermanos regresan a la casa...
             Historia: En la casa había mucha comida, tanta comida como para alimentar a una manada de lobos por muchos años, un hogar acogible, caliente y con espacio suficiente para ellos dos y para sus padres, si es que algún día volvían y con un bosque gigante sólo para ellos, para divertirse y jugar todo lo que quisieran… Aún así no sabían qué hacer. ¿Deberían quedarse a vivir en la casa de la bruja que los quiso comer? ¿O es muy arriesgado?
+	    
             Acción:
                  ->¿Quedarse a vivir?
                          ->Sí.
@@ -163,5 +176,6 @@ Pantalla 15:
 Pantalla 16:
             Descripción: Los niños decidieron quedarse en la casa.
             Historia: Esta historia tiene un final agridulce… si bien decidieron quedarse a vivir en la casa hecha de dulces, pudieron comer y beber todo lo que quisieran hasta el cansancio, pudieron salir a cazar al bosque y saber a donde volver, sus padres nunca volvieron. Los esperaron y los extrañaron por mucho tiempo, pero un día dejaron de esperarlos. A partir de esta historia se volvieron mucho más fuertes, superaron sus miedos… y si seguían juntos, ya nada les haría daño.
+	    
             Acción:
                ->Pantalla 7.
