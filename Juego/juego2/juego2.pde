@@ -1,15 +1,18 @@
+//La ellipse roja debe atravesar toda la pantalla, cuando llegue arriba, volverá a su posición inicial y los obstaculos incrementarán en uno. Si toca una ellipse blanca, el
+jugador perderá. Si atraviesa la pantalla 3 veces, gana.
+
+
 int cantidadEllipses = 10;
 int tamanioEllipse;
 int [] posXdeEllipse = new int [cantidadEllipses]; // Posiciones en X de cada ellipse
 int [] dirXdeEllipse = new int [cantidadEllipses]; // Direcciones en X de cada ellipse
 int personajePosX, personajePosY;
 boolean fin = false;
+int contarHastaGanar = 0;
 
 void setup() {
   size(500, 500);
   tamanioEllipse = height/cantidadEllipses;
-
-  surface.setResizable(true);
 
   textSize(50);
   textAlign(CENTER);
@@ -52,12 +55,33 @@ void draw() {
         ellipse(personajePosX, personajePosY, tamanioEllipse, tamanioEllipse); 
      
         fin = perdiste(h, posYdeEllipse, personajePosX);
-      }
-      if(fin){
+      }else{
         background(0);
         fill(255);
         text("PERDISTE!", width/2, height/2);
       } 
+    }
+        //AUMENTAR ELLIPSES A MEDIDA QUE EL JUGADOR LLEGA AL PUNTO 0 DE Y
+    if(personajePosY <= -1){
+      cantidadEllipses++;
+      personajePosY = height - tamanioEllipse/2;
+      contarHastaGanar++;
+      posXdeEllipse = new int [cantidadEllipses]; // Posiciones en X de cada ellipse
+      dirXdeEllipse = new int [cantidadEllipses]; // Direcciones en X de cada ellipse
+        for (int h=0; h < cantidadEllipses-1; h++) {
+    //Genero aleatoriamente la posX de la elipse
+    posXdeEllipse[h] = round(random(tamanioEllipse, width-tamanioEllipse));
+    //Genero aleatoriamente la dirección (izq o dcha)
+    if (random(0, width)>width/2){
+      dirXdeEllipse[h] = 1;
+    }else{
+      dirXdeEllipse[h] = -1;
+    }
+  }
+    }
+    if(contarHastaGanar == 3){
+      background(255);
+      text("GANASTE!", width/2, height/2);
     }
 }
 
@@ -67,30 +91,16 @@ boolean perdiste(int h, int posYdeEllipse, int personajePosX){
   int bordeIzquierdoPersonaje = personajePosX - tamanioEllipse/2;
   int bordeDerechoEllipse = posXdeEllipse[h] + tamanioEllipse/2;
   int bordeIzquierdoEllipse = posXdeEllipse[h] - tamanioEllipse/2;
-  int bordeSupPersonaje = personajePosY - tamanioEllipse/2;
-  int bordeInfPersonaje = personajePosY + tamanioEllipse/2;
-  int bordeSupEllipse = posYdeEllipse - tamanioEllipse/2;
-  int bordeInfEllipse = posYdeEllipse + tamanioEllipse/2;
-  
+ 
   if(personajePosY == posYdeEllipse){
-   
+   //SI EL PERSONAJE TOCA LOS BORDES DE LOS LADOS DE LAS ELLIPSES
     if(bordeDerechoPersonaje == bordeIzquierdoEllipse || bordeIzquierdoPersonaje == bordeDerechoEllipse){
       return true;
-    }
-   }
-   if(personajePosX == posXdeEllipse[h]){
-    if(bordeSupPersonaje <= bordeDerechoEllipse && bordeSupPersonaje >= bordeIzquierdoEllipse){
-       println("ENTRA EL SEGUNDO IF");
-       println(bordeSupPersonaje, bordeDerechoEllipse, bordeIzquierdoEllipse);
-        println(h);
+    }//SI EL PERSONAJE TOCA ARRIBA O ABAJO DE LAS ELLIPSES
+    if(personajePosX <= bordeDerechoEllipse && personajePosX >= bordeIzquierdoEllipse){
        return true;
-    }
-    if(bordeInfPersonaje <= bordeDerechoEllipse && bordeInfPersonaje >= bordeIzquierdoEllipse){
-      println("ENTRA EL TERCER IF");
-       println(h);
-      return true;
-    }
-    }
+     }
+   }
   return false;
 }
 
@@ -105,3 +115,4 @@ void keyPressed() {
     }
   }
 }
+
