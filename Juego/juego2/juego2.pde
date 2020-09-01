@@ -1,5 +1,5 @@
 //La ellipse roja debe atravesar toda la pantalla, cuando llegue arriba, volverá a su posición inicial y los obstaculos incrementarán en uno. Si toca una ellipse blanca, el
-jugador perderá. Si atraviesa la pantalla 3 veces, gana.
+//jugador perderá. Si atraviesa la pantalla 3 veces, gana.
 
 
 int cantidadEllipses = 10;
