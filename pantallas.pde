@@ -5,7 +5,67 @@ void cargarImagenes(){
 }
 
 void cambioDePantallas(){
-  if(esPantalla(0)){
+  switch (pantallaActual){
+    case 0: 
+      unBoton(1);
+      posY = 700;
+      break;
+    case 1:
+      botonesPantalla1(2,0);
+      break;
+    case 2:
+      unBoton(3);
+      break;
+    case 3:
+      unBoton(4);
+      break;
+    case 4:
+      unBoton(5);
+      break;
+    case 5:
+      dosBotones(6, 7);
+      break;
+    case 6:
+      dosBotones(10, 7);
+      break;
+    case 7:
+      unBoton(8);
+      break;
+    case 8:
+      dosBotones(1, -1);
+      break;
+    case 9:
+      unBoton(1);
+      break;
+    case 10:
+      dosBotones(11, 12);
+      break;
+    case 11:
+      unBoton(8);
+      break;
+    case 12:
+      dosBotones(13, 14);
+      break;
+    case 13:
+      dosBotones(15, 14);
+      break;
+    case 14:
+      unBoton(8);
+      break;
+    case 15:
+      dosBotones(17, 16);
+      break;
+    case 16:
+      unBoton(8);
+      break;
+    case 17:
+      dosBotones(18, 16);
+      break;
+    case 18:
+      unBoton(9);
+      break;
+  }
+/*  if(esPantalla(0)){
     unBoton(1);
     posY = 700;
   }else if(esPantalla(1)){
@@ -44,7 +104,9 @@ void cambioDePantallas(){
     dosBotones(18, 16);
   }else if(esPantalla(18)){
     unBoton(9);
-  }
+  }*/
+
+
   /*  for(int i = 0; i<pantallas.length; i++){
    if(pantallaActual == i){
      if(pantallas[pantallaActual][1] == -1){
