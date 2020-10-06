@@ -15,12 +15,10 @@ class Techo{
   
   void dibujate(){
     fill(this.colorTecho);
-    rect(this.posX, this.posY, this.ancho, this.alto);
+    rect(this.posX, this.posY, this.ancho, this.alto * tam);
   }
   
   void aplastarJugador(){
-    this.alto = this.alto + tam;
-   // println(this.alto);
-  }
-    
+    this.alto++;
+  }   
 }

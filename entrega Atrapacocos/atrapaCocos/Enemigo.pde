@@ -7,6 +7,7 @@ class Enemigo{
   
   Enemigo(int posX){
     this.colorEllipse = color(colorEnemigo);
+    this.posY = 0;
     this.posX = posX;
     this.ancho = tam/2;
     this.alto = tam/2;
@@ -21,7 +22,6 @@ class Enemigo{
   }
     
   void dibujate(){
-    //println(this.posX, this.posY, this.ancho, this.alto);
     fill(colorEnemigo);
     ellipse(this.posX, this.posY, this.ancho, this.alto);
   }
@@ -29,5 +29,4 @@ class Enemigo{
   void descender(int velocidad){
     this.posY = this.posY + velocidad;
   }
-
 }

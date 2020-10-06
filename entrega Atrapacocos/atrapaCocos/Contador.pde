@@ -24,5 +24,4 @@ class Contador{
   void incrementarse(){
     this.cantidadDeEllipsesAtrapadas++;
   }
-  
 }
