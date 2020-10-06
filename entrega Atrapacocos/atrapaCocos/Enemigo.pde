@@ -21,9 +21,9 @@ class Enemigo{
   }
     
   void dibujate(){
-    println(posX, posY, ancho, alto);
+    //println(this.posX, this.posY, this.ancho, this.alto);
     fill(colorEnemigo);
-    ellipse(posX, posY, ancho, alto);
+    ellipse(this.posX, this.posY, this.ancho, this.alto);
   }
   
   void descender(int velocidad){

@@ -19,7 +19,8 @@ class Techo{
   }
   
   void aplastarJugador(){
-    this.alto += tam;
+    this.alto = this.alto + tam;
+   // println(this.alto);
   }
     
 }

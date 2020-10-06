@@ -8,7 +8,7 @@ class Juego{
    
    Juego(){
      this.cantidadDeEnemigos = 10;
-     this.jugador = new Jugador(colorJugador, width/2, 360, 40, 40);
+     this.jugador = new Jugador(colorJugador, width/2, 360, tam, tam);
      this.contador = new Contador(50, 50, colorTexto, 20);
      this.techo = new Techo();
      this.velocidad = 1;
@@ -18,12 +18,15 @@ class Juego{
      }
    }  
    void comenzar(){
-     techo.dibujate();
-     contador.dibujate();
      for(int i = 0; i < cantidadDeEnemigos; i++){
        this.enemigos[i].dibujate();
      }
      jugador.dibujate();
+     techo.dibujate();
+     contador.dibujate();
+   }
+   void aumentarVelocidad(){
+     this.velocidad++;
    }
    
 }
