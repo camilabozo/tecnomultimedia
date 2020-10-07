@@ -9,28 +9,33 @@ Descripción: Créditos.
 Pantalla 1: 
 Descripción: Imagen de presentación de la historia 
   Historia: Bienvenidx a la aventura gráfica de los hermanos Hansel & Gretel
-  Acción: 
-    Comenzar -> Pantalla 2
-    Creditos -> Pantalla 0
+    Acción: 
+      Comenzar 
+        -> Pantalla 2
+      Creditos 
+        -> Pantalla 0
 
 Pantalla 2: 
   Descripción: Imagen de la familia, madre, padre e hijos.
   Historia:“Había una vez un leñador y su esposa que vivían en una aldea con sus dos hijos, Hänsel y Gretel. 
   Acción: 
-    Continuar -> Pantalla 3
+    Continuar 
+      -> Pantalla 3
 
 Pantalla 3: 
   Descripción: En la aldea se rumoreaba que la madre de estos niños practicaba la brujería, por lo que sin mediar palabra una fría
   noche todos los lugareños con sus antorchas y armas fabricadas a mano, atacaron su casa para llevarse a la hoguera a su madre y quemarla viva. 
   	    Acción:
-           Continuar -> Pantalla 4
+           Continuar 
+            -> Pantalla 4
 
 Pantalla 4: 
 Descripción: Queriendolos proteger, el padre desesperado los despertó y los llevó en
   medio del bosque, les dijo que se quedaran ahí, que cuando con su madre
   estuvieran a salvo volvería a buscarlos.
     Acción:
-      Continuar -> Pantalla 5
+      Continuar 
+        -> Pantalla 5
 
 Pantalla 5:
 Descripción: Su padre nunca llegó. 
