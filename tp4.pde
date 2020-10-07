@@ -1,17 +1,14 @@
 import processing.sound.*;
 int posX; int posY = 700; //variables que utilizaré para los créditos
-
 int cantidadDeImagenes = 19;
 int pantallaActual = 1; 
 PImage [] imagenes = new PImage [cantidadDeImagenes];
 int [] pantallasDeUnBoton = {0, 2, 3, 4, 7, 9, 11, 14, 16, 18};
-//int [][] pantallas = new int [cantidadDeImagenes][2];
 PFont fuenteCreditos;
 
 void setup(){
   size(800, 600);
   cargarImagenes();
-  //cargarPantallas();
   fuenteCreditos = loadFont("MonotypeCorsiva-48.vlw");
   SoundFile terror; 
   terror = new SoundFile(this, "terror.mp3");
@@ -26,6 +23,5 @@ void draw(){
 }
 
 void mouseClicked(){
-// println("posX:" + mouseX + "posY:" + mouseY);
   cambioDePantallas();
 }
