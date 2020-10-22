@@ -4,8 +4,7 @@ class Juego{
   Cerradura cerradura;
   Contador contador;
   color fondo;
-
-
+  
   Juego(){
     this.llave = new Llave();
     this.aguja = new Aguja();
@@ -15,9 +14,15 @@ class Juego{
   }
   
   void dibujate(){
-    llave.dibujate();
+   // background(255);
+   // llave.dibujate();
     aguja.dibujate();
-    cerradura.dibujate();
-    contador.dibujate();
+   // cerradura.dibujate();
+    //contador.dibujate();
+  }
+  
+  void cambiarVelocidad(float velocidad){
+    this.aguja.velocidad = velocidad;
+ //   this.llave.velocidad = velocidad;
   }
 }
