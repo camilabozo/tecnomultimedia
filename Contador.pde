@@ -14,10 +14,16 @@ class Contador{
     this.colorTexto = color(255, 0, 0);
     this.tamanioTexto = 30;
   }
-    void dibujate(){
+  
+  void dibujate(){
+    textAlign(CORNER);
     textSize(this.tamanioTexto);
     fill(this.colorTexto);
     text(this.textoEnPantalla + this.intentosRestantes, this.posX, this.posY);
+  }
+  
+  void decrementar(){
+    this.intentosRestantes--;
   }
   
 }
