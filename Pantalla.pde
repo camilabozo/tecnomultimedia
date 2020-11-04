@@ -22,11 +22,6 @@ class Pantalla{
       this.botones[1].dibujate();
     }
   }
-    
-  void mostrarCreditos(){
-    this.dibujate();
-    this.historia.posY--;
-  }
   
   int mouseClicked(){
     int pantallaAIr = botones[0].mouseClicked();     //botones[0].mouseClicked retorna una pantallaAIr en caso de que se haya clickeado el boton, sino -1

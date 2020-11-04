@@ -27,10 +27,9 @@ class Aventura{
   
   void dibujate(){
     background(255);
-    this.pantallaActual.dibujate();
-            
+    this.pantallaActual.dibujate();        
     if(this.pantallaActual == this.pantallas[0]){
-      this.pantallaActual.mostrarCreditos();
+      this.pantallaActual.historia.posY--;
     } 
   }
 
