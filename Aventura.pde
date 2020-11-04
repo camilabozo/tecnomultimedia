@@ -13,8 +13,6 @@ class Aventura{
   String fuenteHistoria = "TwCenMT-Condensed-48.vlw";
   String fuenteTitulo = "VinerHandITC-48.vlw";
   String fuenteCreditos = "BodoniMTCondensed-Bold-48.vlw";
-  Creditos creditos;
-  int posYcreditos = 400;
   
   Aventura(){
     this.cantidadPantallas = 19;
