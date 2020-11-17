@@ -4,9 +4,10 @@ class Texto{
   PFont fuente;
   color colorTx;
   int posX, posY, ancho, alto;
-  PFont fuenteTitulo;
+  Resize resize;
   
   Texto(String fuente, String contenido, int tamanio, int posX, int posY, int ancho, int alto){
+    this.resize = new Resize();
     this.contenido = contenido;
     this.tamanio = tamanio;
     this.fuente = loadFont(fuente);
@@ -15,24 +16,21 @@ class Texto{
     this.posY = posY;
     this.ancho = ancho;
     this.alto = alto;   
-    this.fuenteTitulo = loadFont("VinerHandITC-48.vlw");
   }
   
   void dibujate(){
-    textFont(this.fuente);
-    textSize(this.tamanio);
+    textAlign(CENTER);
+    textFont(this.fuente, this.resize.porcentajeY(this.tamanio));
     fill(this.colorTx);
-    text(this.contenido, this.posX, this.posY, this.ancho, this.alto);
-    if(this.fuente == fuenteTitulo){
-      this.sombrear();
-      println("hay que sombrear");
-    }
-
+    text(this.contenido, this.resize.porcentajeX(this.posX), this.resize.porcentajeY(this.posY), this.resize.porcentajeX(this.ancho), this.resize.porcentajeY(this.alto));
   }
   
-  void sombrear(){
-    fill(0);
-    text(this.contenido, this.posX+3, this.posY+3, this.ancho, this.alto);
+  void subir(){
+    this.posY--;
+  }
+  
+  void reposicionarse(){
+    this.posY = 700;
   }
 
 }

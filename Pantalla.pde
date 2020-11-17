@@ -3,8 +3,10 @@ class Pantalla{
   PImage imagen;
   int num, posX, posY;
   Boton[] botones;
+  Resize resize;
   
   Pantalla(Texto historia, int num, Boton[] botones){
+    this.resize = new Resize();
     this.num = num;
     this.imagen = loadImage("pantalla"+ num +".png");
     this.posX = 0;
