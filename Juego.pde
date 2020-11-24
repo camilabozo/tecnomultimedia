@@ -45,7 +45,7 @@ class Juego{
           this.fin = true;                                                       //El juego finaliza
         }else if(this.jugador.llave.posY + this.jugador.llave.alto/2 <= 0){      //Sino si la llave supera la parte de arriba de la pantalla
           this.contador.decrementar();                                           //El contador decrementa
-          this.reubicar();                                                       //La llave se reubica en la mano
+          this.jugador.reubicar();                                               //La llave se reubica en la mano
         }
         if(this.contador.intentosRestantes == 0){                                //Si el contador llega a 0
           this.fin = true;                                                       //El juego finaliza
@@ -76,14 +76,8 @@ class Juego{
     }
   }
   
-  void reubicar(){                      //Reubica todos los objetos si el jugador pierde un intento
-    this.jugador.llave.reubicar();
-    this.jugador.mano.cerrar();
-    this.jugador.disparo = false;
-  }
-  
   void resetear(){                         //Resetea el juego
-    this.reubicar();
+    this.jugador.reubicar();
     this.contador.intentosRestantes = 3;
     this.fin = false;
   }

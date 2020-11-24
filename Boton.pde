@@ -47,7 +47,7 @@ class Boton {
           aventura.creditos.texto.reposicionarse();
           break;
       }
-      return this.pantallaAIr;                          //Incondiconalmente retorna la pantallaAIr
+      return this.pantallaAIr;                          //Incondicionalmente retorna la pantallaAIr
     }else{
       return -1;                                        //Si no se clickea ningún botón, retorna -1(no te lleva a ninguna pantalla)
     }

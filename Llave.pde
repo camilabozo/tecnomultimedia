@@ -10,8 +10,8 @@ class Llave{
     this.resize = new Resize();
     this.ancho = 50;
     this.alto = 100;
-    this.posX = this.ancho/2;
-    this.posY = height - 118;
+    this.posX = this.ancho/2 - 10;
+    this.posY = 482;
     this.imagen = loadImage("Juego/Llave.png");
   }
   
@@ -33,8 +33,6 @@ class Llave{
   }
   
   void reubicar(){
-    println("POR REUBICAR" + this.posY);
-    this.posY = height - this.resize.porcentajeY(118);
-    println("REUBICADA" + this.posY + "ALTO" + height);
+    this.posY = 482;
   }
 }

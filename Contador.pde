@@ -9,7 +9,7 @@ class Contador{
     int tamanio = 40;
     this.textoEnPantalla = new Texto(fuenteBotones, "Intentos: ", tamanio, 35, 40, 175, 65);
     this.textoEnPantalla.colorTx = color(255, 0, 0);
-    this.intentosRestantes = 10;
+    this.intentosRestantes = 3;
   }
   
   void dibujate(){  

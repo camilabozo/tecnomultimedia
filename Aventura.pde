@@ -1,5 +1,5 @@
 class Aventura{
-//  SoundFile terror;
+  SoundFile terror;
   Pantalla pantallaActual;
   int cantidadPantallas;
   int cantidadDeBotones;
@@ -14,8 +14,8 @@ class Aventura{
   boolean mostrarCreditos;
   
   Aventura(PApplet pApplet){
-//    this.terror = new SoundFile(pApplet, "terror.mp3");   //referencia: https://forum.processing.org/one/topic/reference-papplet-of-sketch.html
-//    this.terror.play();
+    this.terror = new SoundFile(pApplet, "terror.mp3");   //referencia: https://forum.processing.org/one/topic/reference-papplet-of-sketch.html
+    this.terror.play();
     this.cantidadPantallas = 18;
     this.cantidadDeBotones = 26;
     this.mostrarCreditos = false;

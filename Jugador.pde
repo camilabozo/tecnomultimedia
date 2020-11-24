@@ -16,8 +16,8 @@ class Jugador{
   }
 
   void dibujate(){
-    llave.dibujate();
-    mano.dibujate();
+    this.llave.dibujate();
+    this.mano.dibujate();
   }
   
   void moverDerecha(){
@@ -48,5 +48,11 @@ class Jugador{
   void lanzarLlave(){
     this.mano.abrir();
     this.llave.avanzar();
+  }
+   
+  void reubicar(){                      //Reubica todos los objetos si el jugador pierde un intento
+    this.llave.reubicar();
+    this.mano.cerrar();
+    this.disparo = false;
   }
 }
